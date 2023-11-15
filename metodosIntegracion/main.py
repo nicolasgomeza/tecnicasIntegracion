@@ -1,33 +1,87 @@
-# Import necessary libraries
 import numpy as np
 
-# Import values from Trapezoidal file
-from Trapezoidal import result_poly_trapez, time_poly_trapez
-from Trapezoidal import result_rational_trapez, time_rational_trapez
-from Trapezoidal import result_trig_trapez, time_trig_trapez
+# Importar funciones de los módulos de Gauss, Trapezoidal y Simpson
+from Gaussian import gaussian_quadrature as metodo_gaussiano
+from Trapezoidal import trapezoidal_rule as metodo_trapezoidal
+from Simpson import simpson_rule as metodo_simpson
 
-# Import values from Simpson file
-from Simpson import result_poly_simpson, time_poly_simpson
-from Simpson import result_rational_simpson, time_rational_simpson
-from Simpson import result_trig_simpson, time_trig_simpson
+# Resultados precisos integracion
+exact_result_poly = 2.666666667
+exact_result_rat = 1.098612289
+exact_result_trig = 2
 
-# Import values from Gaussian file
-from Gaussian import result_poly, time_poly
-from Gaussian import result_rational, time_rational
-from Gaussian import result_trig, time_trig
 
-# Display the imported values
-print("Trapezoidal Results:")
-print(f"Polynomial: {result_poly_trapez}, Time: {time_poly_trapez} seconds")
-print(f"Rational: {result_rational_trapez}, Time: {time_rational_trapez} seconds")
-print(f"Trigonometric: {result_trig_trapez}, Time: {time_trig_trapez} seconds\n")
+# Definir los límites de integración y la precisión
+a = 0
+b = 2
+n = 100
 
-print("Simpson Results:")
-print(f"Polynomial: {result_poly_simpson}, Time: {time_poly_simpson} seconds")
-print(f"Rational: {result_rational_simpson}, Time: {time_rational_simpson} seconds")
-print(f"Trigonometric: {result_trig_simpson}, Time: {time_trig_simpson} seconds\n")
+# Realizar cálculos para cada método y función
+# Método Gaussiano
+resultado_polinomial_gaussiano, tiempo_polinomial_gaussiano = metodo_gaussiano(lambda x: x**2, a, b, n)
+resultado_racional_gaussiano, tiempo_racional_gaussiano = metodo_gaussiano(lambda x: 1/(1+x), a, b, n)
+resultado_trig_gaussiano, tiempo_trig_gaussiano = metodo_gaussiano(np.sin, 0, np.pi, n)
 
-print("Gaussian Results:")
-print(f"Polynomial: {result_poly}, Time: {time_poly} seconds")
-print(f"Rational: {result_rational}, Time: {time_rational} seconds")
-print(f"Trigonometric: {result_trig}, Time: {time_trig} seconds")
+# Método Trapezoidal
+resultado_polinomial_trapezoidal, tiempo_polinomial_trapezoidal = metodo_trapezoidal(lambda x: x**2, a, b, n)
+resultado_racional_trapezoidal, tiempo_racional_trapezoidal = metodo_trapezoidal(lambda x: 1/(1+x), a, b, n)
+resultado_trig_trapezoidal, tiempo_trig_trapezoidal = metodo_trapezoidal(np.sin, 0, np.pi, n)
+
+# Método Simpson
+resultado_polinomial_simpson, tiempo_polinomial_simpson = metodo_simpson(lambda x: x**2, a, b, n)
+resultado_racional_simpson, tiempo_racional_simpson = metodo_simpson(lambda x: 1/(1+x), a, b, n)
+resultado_trig_simpson, tiempo_trig_simpson = metodo_simpson(np.sin, 0, np.pi, n)
+
+# Crear un diccionario para almacenar los resultados
+resultados_dict = {
+    "Gaussiano - Polinomial": {"resultado": resultado_polinomial_gaussiano, "tiempo": tiempo_polinomial_gaussiano},
+    "Gaussiano - Racional": {"resultado": resultado_racional_gaussiano, "tiempo": tiempo_racional_gaussiano},
+    "Gaussiano - Trigonométrico": {"resultado": resultado_trig_gaussiano, "tiempo": tiempo_trig_gaussiano},
+    "Trapezoidal - Polinomial": {"resultado": resultado_polinomial_trapezoidal, "tiempo": tiempo_polinomial_trapezoidal},
+    "Trapezoidal - Racional": {"resultado": resultado_racional_trapezoidal, "tiempo": tiempo_racional_trapezoidal},
+    "Trapezoidal - Trigonométrico": {"resultado": resultado_trig_trapezoidal, "tiempo": tiempo_trig_trapezoidal},
+    "Simpson - Polinomial": {"resultado": resultado_polinomial_simpson, "tiempo": tiempo_polinomial_simpson},
+    "Simpson - Racional": {"resultado": resultado_racional_simpson, "tiempo": tiempo_racional_simpson},
+    "Simpson - Trigonométrico": {"resultado": resultado_trig_simpson, "tiempo": tiempo_trig_simpson}
+}
+
+# Imprime todos los resultados
+def print_data(dict):
+    for key, value in resultados_dict.items():
+        print(f"\n{key}")
+        print(f"Resultado: {value['resultado']}, Tiempo: {value['tiempo']} segundos")
+# print(resultados_dict)
+
+# Imprime los resultados organizados por tiempo
+def print_sorted_times(dict):
+    # Agrupar los resultados por función
+    functions = set(key.split(' - ')[1] for key in dict.keys())
+
+    for func in functions:
+        results_for_func = {key: value for key, value in dict.items() if func in key}
+        sorted_results = sorted(results_for_func.items(), key=lambda x: x[1]["tiempo"])
+
+        print(f"\nComparación de Métodos para la Función {func}")
+        for i in range(len(sorted_results)):
+            key, value = sorted_results[i]
+
+            if i == 0:
+                print(f"+ Método más rápido: {key.split(' - ')[0]} con un tiempo de {value['tiempo']} segundos")
+            else:
+                prev_key, prev_value = sorted_results[i - 1]
+                time_difference_prev = prev_value["tiempo"] - value["tiempo"]
+                print(f"+ Seguido de: {key.split(' - ')[0]} con una diferencia de {abs(time_difference_prev)} segundos respecto al método más rápido")
+
+# Imprime todos los resultados
+print_sorted_times(resultados_dict)
+
+
+
+# Método con la aproximación más cercana para cada función
+metodo_min_dif_polinomial = min([k for k, v in resultados_dict.items() if 'Polinomial' in k])
+metodo_min_dif_racional = min([k for k, v in resultados_dict.items() if 'Racional' in k])
+metodo_min_dif_trig = min([k for k, v in resultados_dict.items() if 'Trigonométrico' in k])
+
+print(f"\nAproximación más cercana para la función Polinomial: {metodo_min_dif_polinomial}")
+print(f"Aproximación más cercana para la función Racional: {metodo_min_dif_racional}")
+print(f"Aproximación más cercana para la función Trigonométrica: {metodo_min_dif_trig}")
