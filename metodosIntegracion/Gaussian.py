@@ -66,9 +66,4 @@ def calculate_differences_and_times(func, exact_result, a, b, n):
     abs_diff = abs(exact_result - result)    
     return result, abs_diff, execution_time
 
-# Invocacion de funcion, main.py lo hace
-'''
-result_poly_gaussian, dif_poly_gaussian, time_poly_gaussian = calculate_differences_and_times(gaussian_quadrature, exact_result_poly, a, b, n)
-result_rational_gaussian, dif_rational_gaussian, time_rational_gaussian = calculate_differences_and_times(gaussian_quadrature, exact_result_rat, a, b, n)
-result_trig_gaussian, dif_trig_gaussian, time_trig_gaussian = calculate_differences_and_times(gaussian_quadrature, exact_result_trig, 0, np.pi, n)
-'''
+print_results()

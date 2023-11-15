@@ -70,11 +70,4 @@ def calculate_differences_and_times(func, exact_result, a, b, n):
     return result, abs_diff, execution_time
 
 
-# Invocacion de funcion, main.py lo hace
-'''
-result_poly_trapez, dif_poly_trapez, time_poly_trapez = calculate_differences_and_times(trapezoidal_rule, exact_result_poly, a, b, n)
-result_rational_trapez, dif_rat_trapez, time_rational_trapez = calculate_differences_and_times(trapezoidal_rule, exact_result_rat, a, b, n)
-result_trig_trapez, dif_trig_trapez, time_trig_trapez = calculate_differences_and_times(trapezoidal_rule, exact_result_trig, 0, np.pi, n)
-'''
-
-
+print_results()

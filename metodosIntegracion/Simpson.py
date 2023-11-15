@@ -72,10 +72,4 @@ def calculate_differences_and_times(func, exact_result, a, b, n):
     return result, abs_diff, execution_time
 
 
-# Invocacion de funcion, main.py lo hace
-'''
-result_poly_simpson, dif_poly_simpson, time_poly_simpson = calculate_differences_and_times(simpson_rule, exact_result_poly, a, b, n)
-result_rational_simpson, dif_rat_simpson, time_rational_simpson = calculate_differences_and_times(simpson_rule, exact_result_rat, a, b, n)
-result_trig_simpson, dif_trig_simpson, time_trig_simpson = calculate_differences_and_times(simpson_rule, exact_result_trig, 0, np.pi, n)
-'''
-
+printResults()
