@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Comparación de Técnicas de Integración Numérica"] 1700151859 "Comparación de Técnicas de Integración Numérica.bcf" "Comparación de Técnicas de Integración Numérica.bbl" "Comparación de Técnicas de Integración Numérica" 1700152356 0
+["biber Comparación de Técnicas de Integración Numérica"] 1700151859 "Comparación de Técnicas de Integración Numérica.bcf" "Comparación de Técnicas de Integración Numérica.bbl" "Comparación de Técnicas de Integración Numérica" 1700172349 0
   "./refs.bib" 1700151039 3602 9877e97429007430cb582927b1d39d15 ""
-  "Comparación de Técnicas de Integración Numérica.bcf" 1700152356 108160 72110fdc5017813ec5c04a1c8dad600b "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.bcf" 1700172349 108160 72110fdc5017813ec5c04a1c8dad600b "pdflatex"
   (generated)
   "Comparación de Técnicas de Integración Numérica.bbl"
   "Comparación de Técnicas de Integración Numérica.blg"
   (rewritten before read)
-["pdflatex"] 1700152353 "/Users/nigomeza/Programming/javeriana/proyectos/tecnicasIntegracion/LatexDoc/Comparación de Técnicas de Integración Numérica.tex" "Comparación de Técnicas de Integración Numérica.pdf" "Comparación de Técnicas de Integración Numérica" 1700152356 0
-  "/Users/nigomeza/Programming/javeriana/proyectos/tecnicasIntegracion/LatexDoc/Comparación de Técnicas de Integración Numérica.tex" 1700152350 25429 a5bab34ca5c58a44fc78e056cf5bf2ab ""
+["pdflatex"] 1700172347 "/Users/nigomeza/Programming/javeriana/proyectos/tecnicasIntegracion/LatexDoc/Comparación de Técnicas de Integración Numérica.tex" "Comparación de Técnicas de Integración Numérica.pdf" "Comparación de Técnicas de Integración Numérica" 1700172349 0
+  "/Users/nigomeza/Programming/javeriana/proyectos/tecnicasIntegracion/LatexDoc/Comparación de Técnicas de Integración Numérica.tex" 1700172346 24825 ac9cd5e746281bddb3fc3bed978f6c5c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -268,12 +268,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1688995431 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1688995345 7883454 c2fcf14bcbd95aea502d856a0dc6fdda ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Comparación de Técnicas de Integración Numérica.aux" 1700152356 5180 da4175b16680b19bc5c36c20f31b2cda "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.aux" 1700172349 5180 da4175b16680b19bc5c36c20f31b2cda "pdflatex"
   "Comparación de Técnicas de Integración Numérica.bbl" 1700151863 16931 c1b4684274e6f9422dbd2f264bef7a7b "biber Comparación de Técnicas de Integración Numérica"
-  "Comparación de Técnicas de Integración Numérica.out" 1700152356 3993 dbc476376b716e7abdebce60eade7d5e "pdflatex"
-  "Comparación de Técnicas de Integración Numérica.run.xml" 1700152356 2642 4c7eaf6674f87cdf4a33b591cb54537a "pdflatex"
-  "Comparación de Técnicas de Integración Numérica.tex" 1700152350 25429 a5bab34ca5c58a44fc78e056cf5bf2ab ""
-  "Comparación de Técnicas de Integración Numérica.toc" 1700152356 2134 83c6adcacdfe5caf9d177aa7cd947ff3 "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.out" 1700172349 3993 dbc476376b716e7abdebce60eade7d5e "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.run.xml" 1700172349 2642 4c7eaf6674f87cdf4a33b591cb54537a "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.tex" 1700172346 24825 ac9cd5e746281bddb3fc3bed978f6c5c ""
+  "Comparación de Técnicas de Integración Numérica.toc" 1700172349 2134 83c6adcacdfe5caf9d177aa7cd947ff3 "pdflatex"
   (generated)
   "Comparación de Técnicas de Integración Numérica.aux"
   "Comparación de Técnicas de Integración Numérica.bcf"
