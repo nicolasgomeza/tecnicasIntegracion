@@ -19,6 +19,44 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{gauss_quad}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7f98d3d56cbd7559d26121029c90e132}{%
+           family={Elvira},
+           familyi={E\bibinitperiod},
+           given={Víctor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=97a616fcae1dd3b2788bff52f4ff4298}{%
+           family={Martino},
+           familyi={M\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a1212f468705a3618c39ce41aed3b0ce}{%
+           family={Closas},
+           familyi={C\bibinitperiod},
+           given={Pau},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8c635a16a5cd365d93f6e6dfe4881d8}
+      \strng{fullhash}{a8c635a16a5cd365d93f6e6dfe4881d8}
+      \strng{bibnamehash}{a8c635a16a5cd365d93f6e6dfe4881d8}
+      \strng{authorbibnamehash}{a8c635a16a5cd365d93f6e6dfe4881d8}
+      \strng{authornamehash}{a8c635a16a5cd365d93f6e6dfe4881d8}
+      \strng{authorfullhash}{a8c635a16a5cd365d93f6e6dfe4881d8}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Signal Processing}
+      \field{title}{Importance Gaussian Quadrature}
+      \field{volume}{69}
+      \field{year}{2021}
+      \field{pages}{474\bibrangedash 488}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TSP.2020.3045526
+      \endverb
+    \endentry
     \entry{smythnumerical}{inbook}{}
       \name{author}{1}{}{%
         {{hash=dbf3c876f4579e206e56f8755d9499e8}{%
@@ -68,6 +106,44 @@
       \endverb
       \verb{url}
       \verb https://gksmyth.github.io/pubs/NumericalIntegration-Preprint.pdf
+      \endverb
+    \endentry
+    \entry{srivastava2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6d4152e669c5702d1b63802593213234}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=39cb787fe6b9a6949f4f259be83703bb}{%
+           family={Yadav},
+           familyi={Y\bibinitperiod},
+           given={Jai\bibnamedelima Singh},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0790baf93c86a3c06e14f5a07be7cad9}
+      \strng{fullhash}{0790baf93c86a3c06e14f5a07be7cad9}
+      \strng{bibnamehash}{0790baf93c86a3c06e14f5a07be7cad9}
+      \strng{authorbibnamehash}{0790baf93c86a3c06e14f5a07be7cad9}
+      \strng{authornamehash}{0790baf93c86a3c06e14f5a07be7cad9}
+      \strng{authorfullhash}{0790baf93c86a3c06e14f5a07be7cad9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2076-5061}
+      \field{journaltitle}{Recent Research in Science and Technology}
+      \field{number}{7}
+      \field{title}{Relative Accuracy of Numerical Quadrature Formulas - Trapezoid Rule, Simpson's 1/3 Rule, Simpson's 3/8 Rule and Boole's Rule}
+      \field{volume}{3}
+      \field{year}{2011}
+      \field{pages}{77\bibrangedash 84}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://core.ac.uk/download/pdf/236009152.pdf
+      \endverb
+      \verb{url}
+      \verb https://core.ac.uk/download/pdf/236009152.pdf
       \endverb
     \endentry
   \enddatalist

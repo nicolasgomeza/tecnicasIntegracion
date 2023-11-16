@@ -1,6 +1,5 @@
 \documentclass[a4paper]{article}
-
-\usepackage[margin=1in]{geometry} % full-width
+\usepackage[margin=1in]{geometry}
 
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -8,7 +7,6 @@
 
 \usepackage[backend=biber, style=numeric]{biblatex}
 \addbibresource{refs.bib}
-
 
 \usepackage{graphicx, color}
 \graphicspath{{fig/}}
@@ -64,7 +62,7 @@
     \]
     
     donde $\frac{b-a}{2}$ es el ancho del trapecio y $\left[f(a) + f(b)\right]$ representa la suma de las alturas de los 
-    extremos. Este método es simple, lo cual lo hace no muy preciso para funciones complicadas.
+    extremos. Este método es simple, lo cual lo hace no muy preciso para funciones complicadas. \cite{smythnumerical} 
     
     
     \begin{center}
@@ -124,8 +122,8 @@
     
     \pagebreak
     
-    Este método utiliza tres puntos (los extremos $a$ y $b$ y el punto medio $\frac{a+b}{2}$) para 
-    ajustar una parábola, lo que lo hace más preciso que la Regla del Trapecio.
+    Este método utiliza tres puntos (los extremos $a$ y $b$ y el punto medio que es el promedio entre ambos) para 
+    ajustar una parábola, lo que lo hace más preciso que la Regla del Trapecio.\cite{srivastava2011}
 
     \begin{center}
     \begin{tikzpicture}
@@ -173,8 +171,8 @@
     
     donde $w_i$ son los pesos asociados a los nodos $x_i$. La precisión de este método depende de 
     la elección de los nodos y pesos, que varían según el tipo de Cuadratura Gaussiana utilizada 
-    (por ejemplo, Gauss-Legendre, Gauss-Hermite, Gauss-Laguerre, etc.). 
-    \cite{smythnumerical}
+    (por ejemplo, Gauss-Legendre, Gauss-Hermite, Gauss-Laguerre, etc.).\cite{gauss_quad}
+    
 
     \section{Funciones de Prueba}
 	\label{sec:funciones}
@@ -209,138 +207,134 @@
     \end{enumerate}
 
     \subsection{Soluciones analíticas}
-    Las soluciones exactas a las integrales de las funciones de prueba son las siguientes:
+    Solucionamos analíticamente las funciones para encontrar las soluciones exactas a sus integrales para poder establecer un punto de comparacion con las soluciones de los métodos de integración.
 
     \begin{enumerate}
-     \item \textbf{Función polinómica:}
-       Para calcular su integral definida, aplicamos la regla de potencias:
-      
+      \item \textbf{Función polinómica:}
       \begin{equation}
       \int x^2 \, dx = \frac{1}{3}x^3 + C
       \end{equation}
-      
       Donde \(C\) es una constante de integración.
 
       \item \textbf{Función racional:}
-      
-      La integral de la función racional se puede calcular analíticamente y su solución exacta es:
-      
       \begin{equation}
       \int \frac{1}{x + 1} \,dx = \ln|x + 1| + C 
       \end{equation}
     
       \item \textbf{Función trigonométrica:}
-      
-      La integral de la función trigonométrica también es conocida y su solución exacta es:
-      
       \begin{equation}
       \int \sin(x) \, dx = -\cos(x) + C
       \end{equation}
-      
     \end{enumerate}
 
     \subsection{Reemplazo en intervalo}
 
     Tomando como punto de referencia un intervalo determinado para las tres funciones podemos
-    comparar más fácil las soluciones analíticas con las funciones por métodos computacionales para 
+    comparar más fácilmente las soluciones analíticas con las funciones por métodos computacionales para 
     su posterior análisis.
+
+    Así con esto, el intervalo será \( [0, 2] \) para las integrales definidas.
 
     \begin{enumerate}
         \item \textbf{Función polinómica:}
-        
-        La integral definida en el intervalo \( [0, 2] \) es:
         \begin{equation}
         \int_{0}^{2} x^2 \, dx = \frac{1}{3}x^3 \Big|_{0}^{2} = \frac{1}{3}(2^3 - 0^3) = \frac{8}{3} = 2.666666667
         \end{equation}
     
         \item \textbf{Función racional:}
-        
-        La integral definida en el intervalo \( [0, 2] \) es:
         \begin{equation}
         \int_{0}^{2} \frac{1}{x + 1} \,dx = \ln|x + 1| \Big|_{0}^{2} = \ln(3) - \ln(1) = \ln(3) = 1.098612289
         \end{equation}
     
         \item \textbf{Función trigonométrica:}
-        
-        La integral definida en el intervalo \( [0, \pi] \) es:
         \begin{equation}
         \int_{0}^{\pi} \sin(x) \, dx = -\cos(x) \Big|_{0}^{\pi} = -\cos(\pi) + \cos(0) = 2
         \end{equation}
     \end{enumerate}
-
     
     \section{Implementación en Python}
 	\label{sec:python}
-    El desarrollo de implementaciones de cada técnica de integración numérica en el lenguaje de 
-    programación Python pueden encontrarse en el  \underline{\href{https://github.com/nicolasgomeza7/tecnicasIntegracion}{repositorio}}.
-
+    La implementaciones de cada técnica de integración numérica en el lenguaje de 
+    programación Python pueden encontrarse en el \underline{\href{https://github.com/nicolasgomeza7/tecnicasIntegracion}{repositorio}}.
     
     \section{Resultados}    
-    \subsection{Eficiencia}
     
-    En términos de eficiencia, medida como el tiempo de cálculo, se observaron los siguientes 
-    resultados:
+    \subsection{Eficiencia}
+
+    En este contexto eficiencia se refiere a la capacidad de un método o algoritmo de integración computacional para realizar cálculos de manera rápida y efectiva, minimizando el tiempo necesario para obtener resultados. La eficiencia es un aspecto crucial en la elección y aplicación de métodos de integración, ya que puede tener un impacto significativo en el rendimiento y la utilidad de las soluciones obtenidas.
+    
+    En términos de eficiencia, medida como el tiempo de cálculo, se observaron los siguientes resultados:
     
    \subsubsection{Función Trigonométrica}
     \begin{itemize}
         \item Método más rápido: Trapezoidal (6.3e-05 segundos).
-        \item Orden de eficiencia: Trapezoidal $\geq$ Simpson $\geq$ Gaussiano.
+        \item Orden de eficiencia: Trapezoidal $>$ Simpson $>$ Gaussiano.
     \end{itemize}
     
     \subsubsection{Función Polinomial}
     \begin{itemize}
         \item Método más rápido: Trapezoidal (2.1e-05 segundos).
-        \item Orden de eficiencia: Trapezoidal $\geq$ Simpson $\geq$ Gaussiano.
+        \item Orden de eficiencia: Trapezoidal $>$ Simpson $>$ Gaussiano.
     \end{itemize}
     
     \subsubsection{Función Racional}
     \begin{itemize}
         \item Método más rápido: Trapezoidal (1.5e-05 segundos).
-        \item Orden de eficiencia: Trapezoidal $\geq$ Simpson $\geq$ Gaussiano.
-    \end{itemize}
+        \item Orden de eficiencia: Trapezoidal $>$ Simpson $>$ Gaussiano.
+    \end{itemize} 
 
     
-    \textbf{Observaciones:}
-    En todas las funciones, el método Trapezoidal demostró ser el más eficiente en tiempo, seguido de cerca por el 
-    método de Simpson, mientras que el método Gaussiano fue el menos eficiente.
-    
     \subsection{Precisión}
-    
-    En cuanto a la precisión, medida como la cercanía a la solución analítica, se obtuvieron los siguientes hallazgos:
-    
+    Precisión en este contexto se refiere a la capacidad de un método computacional para obtener 
+    resultados que se acerquen de manera significativa a la solución analítica o teórica. La precisión es 
+    esencial en la evaluación de la confiabilidad de los resultados obtenidos mediante técnicas de
+    integración, ya que nos permite determinar cuán cercanos están a las respuestas exactas.
+
+    En cuanto a la precisión, medida como la cercanía a la solución analítica, se obtuvieron los 
+    siguientes hallazgos:
+
     \subsubsection{Función Polinomial}
     \begin{itemize}
-        \item Aproximación más cercana: Gaussiano.
-    \end{itemize}
-    
+        \item Método más rápido: Trapezoidal con un tiempo de 1.2e-05 segundos.
+        \item Seguido de: Simpson con una diferencia de 1.1130218505859372e-06 segundos respecto al método más rápido
+        \item Seguido de: Gaussiana con una diferencia de 0.003229856491088867 segundos respecto al método más rápido
+        \item Aproximación más cercana: Gaussiana.
+    \end{itemize} 
+
     \subsubsection{Función Racional}
     \begin{itemize}
-        \item Aproximación más cercana: Gaussiano.
+        \item Método más rápido: Trapezoidal con un tiempo de 1e-05 segundos.
+        \item Seguido de: Simpson con una diferencia de 1.2056732177734367e-06 segundos respecto al método más rápido.
+        \item Seguido de: Gaussiana con una diferencia de 0.00025463104248046875 segundos respecto al método más rápido.
+        \item Aproximación más cercana: Gaussiana. 
     \end{itemize}
-    
+
     \subsubsection{Función Trigonométrica}
     \begin{itemize}
-        \item Aproximación más cercana: Gaussiano.
+        \item Método más rápido: Trapezoidal con un tiempo de 4e-05 segundos.
+        \item Seguido de: Simpson con una diferencia de 5.061111450195309e-06 segundos respecto al método más rápido.
+        \item Seguido de: Gaussiana con una diferencia de 1.9073486328125e-06 segundos respecto al método más rápido.
+        \item Aproximación más cercana: Gaussiana. 
     \end{itemize}
     
-    \textbf{Observaciones:}
-    Para todas las funciones evaluadas, el método Gaussiano ofreció la aproximación más precisa a la solución analítica, a pesar de ser el más lento en términos de tiempo de cálculo.
-    
     \subsection{Análisis de resultados}
+    Se observa una clara compensación entre eficiencia y precisión en los métodos evaluados. Mientras que los métodos Trapezoidal y Simpson son más rápidos, el método Gaussiano proporciona resultados más precisos. 
     
-    Se observa una clara compensación entre eficiencia y precisión en los métodos evaluados. Mientras que los métodos Trapezoidal y Simpson son más rápidos, el método Gaussiano proporciona resultados más precisos. La elección del método adecuado dependerá del equilibrio entre la necesidad de eficiencia (tiempo de cálculo) y precisión. Para funciones complejas o donde se requiere alta precisión, el tiempo adicional requerido por el método Gaussiano puede ser justificado, mientras que para respuestas rápidas con menor necesidad de precisión, los métodos Trapezoidal o Simpson pueden ser más adecuados.
+    La elección del método adecuado dependerá del equilibrio entre la necesidad de eficiencia (tiempo de cálculo) y precisión. Para funciones complejas o donde se requiere alta precisión, el tiempo adicional requerido por el método Gaussiano puede ser justificado, mientras que para respuestas rápidas con menor necesidad de precisión, los métodos Trapezoidal o Simpson pueden ser más adecuados.
     
+    \section{Aplicaciones}
+
+    CHATGPT ACA VA TU INFORMACION
      
     \section{Conclusiones}
     \label{sec:Conclusiones}
-    Este proyecto ha explorado en profundidad la utilidad y aplicación de diversos métodos de integración numérica, subrayando su importancia en una amplia gama de campos científicos y de ingeniería. La integración numérica es fundamental en áreas donde las soluciones analíticas son difíciles o imposibles de obtener, como en la física computacional, la ingeniería, la economía, y en la modelización de fenómenos naturales y procesos industriales.
+    Este proyecto ha explorado la utilidad y aplicación de diversos métodos de integración numérica, subrayando su importancia en una amplia gama de campos científicos. La integración numérica es fundamental en áreas donde las soluciones analíticas son difíciles o imposibles de obtener, como en la física computacional, la ingeniería, la economía, la modelización de fenómenos naturales y procesos industriales, entre otros.
 
     A través del análisis de la Regla del Trapecio, la Regla de Simpson y la Cuadratura Gaussiana, hemos demostrado cómo cada técnica tiene sus propias ventajas y limitaciones, dependiendo del contexto de su aplicación. El método del Trapecio y la Regla de Simpson, debido a su mayor eficiencia en términos de tiempo de cálculo, son especialmente útiles en situaciones donde se requiere una respuesta rápida y la precisión absoluta no es crítica. Por otro lado, la Cuadratura Gaussiana, con su mayor precisión, es invaluable en investigaciones científicas y aplicaciones técnicas donde la exactitud es primordial.
     
     Este proyecto no solo ha proporcionado una comparación detallada de la eficiencia y precisión de estos métodos, sino que también ha brindado una plataforma para familiarizarse con su implementación en Python, un lenguaje de programación ampliamente utilizado en la ciencia de datos, la investigación y el desarrollo de software. La habilidad para implementar y comparar estos métodos es esencial para los ingenieros y científicos, permitiéndoles elegir la herramienta adecuada para sus necesidades específicas.
     
-    En conclusión, los métodos de integración numérica son herramientas poderosas y flexibles en el análisis numérico. Su comprensión y correcta aplicación son cruciales para resolver problemas complejos en el mundo moderno, y este proyecto ha contribuido significativamente a este entendimiento, proporcionando insights valiosos y prácticos para su aplicación en diferentes escenarios.
-    
+    En conclusión, los métodos de integración numérica son herramientas poderosas y flexibles en el análisis numérico. Su comprensión y correcta aplicación son cruciales para resolver problemas complejos en el mundo moderno, y este proyecto ha planteado una introducción a su entendimiento, proporcionando familiaridad y un entorno para su aplicación en diferentes escenarios.    
     
     \printbibliography
 

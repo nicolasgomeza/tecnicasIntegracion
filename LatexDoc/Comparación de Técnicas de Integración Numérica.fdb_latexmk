@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Comparación de Técnicas de Integración Numérica"] 1700079964 "Comparación de Técnicas de Integración Numérica.bcf" "Comparación de Técnicas de Integración Numérica.bbl" "Comparación de Técnicas de Integración Numérica" 1700079971 0
-  "./refs.bib" 1700079586 327 b89e0f03fa8ce32055d8258efb7e9b76 ""
-  "Comparación de Técnicas de Integración Numérica.bcf" 1700079970 107764 00c51981c0c4e47e47323577b383e854 "pdflatex"
+["biber Comparación de Técnicas de Integración Numérica"] 1700144775 "Comparación de Técnicas de Integración Numérica.bcf" "Comparación de Técnicas de Integración Numérica.bbl" "Comparación de Técnicas de Integración Numérica" 1700146519 0
+  "./refs.bib" 1700142964 1025 b311cc2f8e094dc35b3d412d4d57176d ""
+  "Comparación de Técnicas de Integración Numérica.bcf" 1700146519 107898 9c5c11c8bd117ac18972c6a91cc52801 "pdflatex"
   (generated)
   "Comparación de Técnicas de Integración Numérica.bbl"
   "Comparación de Técnicas de Integración Numérica.blg"
   (rewritten before read)
-["pdflatex"] 1700079968 "/Users/nigomeza/Programming/javeriana/proyectos/tecnicasIntegracion/LatexDoc/Comparación de Técnicas de Integración Numérica.tex" "Comparación de Técnicas de Integración Numérica.pdf" "Comparación de Técnicas de Integración Numérica" 1700079971 0
-  "/Users/nigomeza/Programming/javeriana/proyectos/tecnicasIntegracion/LatexDoc/Comparación de Técnicas de Integración Numérica.tex" 1700079788 15959 c0b0a6f2d30f7ad9daa760369841b2cc ""
+["pdflatex"] 1700146517 "/Users/nigomeza/Programming/javeriana/proyectos/tecnicasIntegracion/LatexDoc/Comparación de Técnicas de Integración Numérica.tex" "Comparación de Técnicas de Integración Numérica.pdf" "Comparación de Técnicas de Integración Numérica" 1700146519 0
+  "/Users/nigomeza/Programming/javeriana/proyectos/tecnicasIntegracion/LatexDoc/Comparación de Técnicas de Integración Numérica.tex" 1700146517 16998 d18086ab55fbc639c45685f5ffe8f9b6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -265,12 +265,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1688995431 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1688995345 7883454 c2fcf14bcbd95aea502d856a0dc6fdda ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Comparación de Técnicas de Integración Numérica.aux" 1700079970 3864 baf4e8c83bd653ea0bce549b8db2f526 "pdflatex"
-  "Comparación de Técnicas de Integración Numérica.bbl" 1700079968 2501 59d49eb4a654dbd3070b2c36533613d6 "biber Comparación de Técnicas de Integración Numérica"
-  "Comparación de Técnicas de Integración Numérica.out" 1700079970 3242 859e3d2b7d1bc2c212d9ba671b805801 "pdflatex"
-  "Comparación de Técnicas de Integración Numérica.run.xml" 1700079970 2642 4c7eaf6674f87cdf4a33b591cb54537a "pdflatex"
-  "Comparación de Técnicas de Integración Numérica.tex" 1700079788 15959 c0b0a6f2d30f7ad9daa760369841b2cc ""
-  "Comparación de Técnicas de Integración Numérica.toc" 1700079970 1780 edc757763dd8013afcae1d3cf7c65746 "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.aux" 1700146519 4245 73c47c857196d5b20332600a5de8bb01 "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.bbl" 1700144779 5601 e5a89af22d66d5a58ee438ddb0c30b38 "biber Comparación de Técnicas de Integración Numérica"
+  "Comparación de Técnicas de Integración Numérica.out" 1700146519 3346 b670554cf8ed46a899ee7739717e2bb3 "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.run.xml" 1700146519 2642 4c7eaf6674f87cdf4a33b591cb54537a "pdflatex"
+  "Comparación de Técnicas de Integración Numérica.tex" 1700146517 16998 d18086ab55fbc639c45685f5ffe8f9b6 ""
+  "Comparación de Técnicas de Integración Numérica.toc" 1700146519 1848 8a078115261d8a9ff7f47c2d97addcd7 "pdflatex"
   (generated)
   "Comparación de Técnicas de Integración Numérica.aux"
   "Comparación de Técnicas de Integración Numérica.bcf"
