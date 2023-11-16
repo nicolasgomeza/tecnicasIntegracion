@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.10)  16 NOV 2023 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.10)  16 NOV 2023 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -884,7 +884,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2]
-Package pgfplots info on input line 181: fill between: activating layered graphics
+Package pgfplots info on input line 158: fill between: activating layered graphics
 \pgf@layerbox@axis background=\box69
 \pgf@layerboxsaved@axis background=\box70
 \pgf@layerbox@axis grid=\box71
@@ -901,7 +901,9 @@ Package pgfplots info on input line 181: fill between: activating layered graphi
 \pgf@layerboxsaved@axis descriptions=\box82
 \pgf@layerbox@axis foreground=\box83
 \pgf@layerboxsaved@axis foreground=\box84
-Package pgfplots info on input line 181: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
+Package pgfplots info on input line 158: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
+Package pgfplots info on input line 211: fill between: activating layered graphics
+Package pgfplots info on input line 211: Setting layers 'axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground'...
  [3] [4] [5] [6] [7] [8] (./Comparación de Técnicas de Integración Numérica.aux)
 Package rerunfilecheck Info: File `"Comparación de Técnicas de Integración Numérica".out' has not changed.
 (rerunfilecheck)             Checksum: DBC476376B716E7ABDEBCE60EADE7D5E;3993.
@@ -910,15 +912,15 @@ Package logreq Info: Writing requests to '"Comparación de Técnicas de Integrac
 
  ) 
 Here is how much of TeX's memory you used:
- 39971 strings out of 476025
- 922470 string characters out of 5790017
- 1870388 words of memory out of 5000000
- 59758 multiletter control sequences out of 15000+600000
+ 40056 strings out of 476025
+ 924207 string characters out of 5790017
+ 1872388 words of memory out of 5000000
+ 59843 multiletter control sequences out of 15000+600000
  525152 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,103p,1083b,1954s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,103p,1083b,1980s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Comparación de Técnicas de Integración Numérica.pdf" (8 pages, 296587 bytes).
+Output written on "Comparación de Técnicas de Integración Numérica.pdf" (8 pages, 298906 bytes).
 PDF statistics:
  362 PDF objects out of 1000 (max. 8388607)
  298 compressed objects within 3 object streams
