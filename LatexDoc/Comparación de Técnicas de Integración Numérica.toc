@@ -19,4 +19,7 @@
 \contentsline {subsubsection}{\numberline {6.2.3}Función Trigonométrica}{5}{subsubsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.3}Análisis de resultados}{5}{subsection.6.3}%
 \contentsline {section}{\numberline {7}Aplicaciones}{6}{section.7}%
-\contentsline {section}{\numberline {8}Conclusiones}{6}{section.8}%
+\contentsline {subsection}{\numberline {7.1}Problema de manejo de embalses}{6}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}OpenGeoSys}{6}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Algoritmos en el Desarrollo de Motores de Juegos}{6}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Conclusiones}{7}{section.8}%

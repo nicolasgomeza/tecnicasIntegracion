@@ -2364,6 +2364,10 @@
     <bcf:citekey order="1" intorder="1">smythnumerical</bcf:citekey>
     <bcf:citekey order="2" intorder="1">srivastava2011</bcf:citekey>
     <bcf:citekey order="3" intorder="1">gauss_quad</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">newton_method</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">geosys</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">serranoalgos</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">doommethods</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

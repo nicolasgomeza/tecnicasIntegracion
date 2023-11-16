@@ -18,7 +18,7 @@
 \pgfplotsset{compat=1.14}
 \usepgfplotslibrary{fillbetween}
 \usetikzlibrary{intersections}
-
+\usetikzlibrary{patterns}
 
 \title{Comparación de Técnicas de Integración Numérica}
 \author{Nicolás Gómez Aragón\thanks{\texttt{nicolas.gomeza@javeriana.edu.co}}}
@@ -126,37 +126,7 @@
     ajustar una parábola, lo que lo hace más preciso que la Regla del Trapecio.\cite{srivastava2011}
 
     \begin{center}
-    \begin{tikzpicture}
-        \begin{axis}[
-            axis lines=middle, 
-            ytick=\empty, 
-            ymax=1.5, ymin=0, xmax=2.6, xmin=0,
-            xtick={0.3,1.3,2.3}, xticklabels={$a$,$\frac{a+b}{2}$,$b$},
-            xlabel={$x$}, ylabel={$y$},
-            every axis plot/.append style={thick}
-        ]
     
-        % Draw the function
-        \addplot[name path=f, blue, domain=0.3:2.3, samples=100] {1/(x+1)};
-    
-        % Draw the Gauss-Legendre polynomial (quadratic)
-        \addplot[name path=p2, red, domain=0.3:2.3] {0.5*(x-0.3)*(x-2.3)};
-    
-        % Fill between the function graph and the x-axis
-        \addplot[cyan!30] fill between[of=f and p2];
-    
-        % Draw vertical lines for the interval
-        \draw[dotted] (axis cs:0.3,0) -- (axis cs:0.3,1);
-        \draw[dotted] (axis cs:2.3,0) -- (axis cs:2.3,1);
-        \draw[dotted] (axis cs:1.3,0) -- (axis cs:1.3,1);
-    
-        % Place Gauss point markers
-        \node[circle, fill=red, inner sep=2pt, pin=below:{$a$}] at (axis cs:0.3,1) {};
-        \node[circle, fill=red, inner sep=2pt, pin=below:{$\frac{a+b}{2}$}] at (axis cs:1.3,1) {};
-        \node[circle, fill=red, inner sep=2pt, pin=below:{$b$}] at (axis cs:2.3,1) {};
-        
-        \end{axis}
-    \end{tikzpicture}
     \end{center}
 
     \subsection{Cuadratura Gaussiana}
@@ -173,6 +143,48 @@
     la elección de los nodos y pesos, que varían según el tipo de Cuadratura Gaussiana utilizada 
     (por ejemplo, Gauss-Legendre, Gauss-Hermite, Gauss-Laguerre, etc.).\cite{gauss_quad}
     
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines=middle,
+                xlabel=$x$,
+                ylabel={$f(x)$},
+                ticks=none,
+                xmin=0, xmax=3,
+                ymin=0, ymax=2,
+                domain=0:3,
+                samples=100,
+                clip=false
+            ]
+        
+            % Define the curve to be integrated
+            \addplot[name path=f, red, thick] {exp(-x^2) + 1};
+        
+            % Define the integration area
+            \path[name path=axis] (axis cs:0,0) -- (axis cs:3,0);
+        
+            % Draw the shaded area
+            \addplot[pattern=north east lines, pattern color=blue] fill between[of=f and axis, soft clip={domain=1:2}];
+        
+            % Draw the Gauss points
+            \node[shape=circle, fill=green, inner sep=2pt, label=above:{$t_1$}] at (axis cs:1, {exp(-1^2) + 1}) {};
+            \node[shape=circle, fill=green, inner sep=2pt, label=above:{$t_2$}] at (axis cs:2, {exp(-2^2) + 1}) {};
+        
+            % Draw the vertical dashed lines
+            \draw[dashed] (axis cs:1,0) -- (axis cs:1, {exp(-1^2) + 1});
+            \draw[dashed] (axis cs:2,0) -- (axis cs:2, {exp(-2^2) + 1});
+        
+            % Draw the interval [a,b]
+            \node[shape=circle, fill=green, inner sep=2pt, label=below:{$a$}] at (axis cs:1, 0) {};
+            \node[shape=circle, fill=green, inner sep=2pt, label=below:{$b$}] at (axis cs:2, 0) {};
+        
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+
+    En la figura anterior se representa la aproximación de cuadratura gaussiana para la integración numérica de la función $f(x) = e^{-x^2} + 1$ en el intervalo $[1, 2]$. Los puntos verdes, $t_1$ y $t_2$, corresponden a los nodos de Gauss, donde se evalúa la función. Las líneas discontinuas verticales marcan las posiciones de estos nodos. La región sombreada ilustra el área bajo la curva de $f(x)$ que se aproxima mediante polinomios que pasan por los puntos de Gauss, lo cual permite una estimación precisa de la integral de la función en el intervalo dado.
+
+
 
     \section{Funciones de Prueba}
 	\label{sec:funciones}
@@ -255,7 +267,7 @@
     \section{Implementación en Python}
 	\label{sec:python}
     La implementaciones de cada técnica de integración numérica en el lenguaje de 
-    programación Python pueden encontrarse en el \underline{\href{https://github.com/nicolasgomeza7/tecnicasIntegracion}{repositorio}}.
+    programación Python pueden encontrarse en el \href{https://github.com/nicolasgomeza7/tecnicasIntegracion}{repositorio}.
     
     \section{Resultados}    
     
@@ -323,8 +335,28 @@
     La elección del método adecuado dependerá del equilibrio entre la necesidad de eficiencia (tiempo de cálculo) y precisión. Para funciones complejas o donde se requiere alta precisión, el tiempo adicional requerido por el método Gaussiano puede ser justificado, mientras que para respuestas rápidas con menor necesidad de precisión, los métodos Trapezoidal o Simpson pueden ser más adecuados.
     
     \section{Aplicaciones}
+    En esta parte del proyecto se mostrarán 3 proyectos de aplicación donde los métodos computacionales, en especial los de integración juegan un rol determinante.
 
-    CHATGPT ACA VA TU INFORMACION
+    \subsection{Problema de manejo de embalses}
+    En el proyecto este proyecto de Universidad Autónoma de México (UNAM), se aborda una aplicación práctica de las técnicas de integración numérica en el ámbito de la ingeniería hidrológica. El estudio se enfoca en el uso de esquemas de integración numérica de Newton - la Regla del Trapecio, Simpson 1/3 y Simpson 3/8 - para calcular el volumen de almacenamiento en el embalse de la presa "Las Cruces", que forma parte de un proyecto hidroeléctrico dirigido por la Comisión Federal de Electricidad. Este análisis resalta la relevancia de los métodos numéricos en la resolución de problemas complejos en el campo de la hidrología de superficie, una disciplina crucial en el diseño y manejo de infraestructuras hidráulicas.
+
+    Uno de los aspectos centrales del proyecto es la aplicación de la ecuación diferencial de continuidad para modelar el tránsito de avenidas en embalses, un enfoque que refleja la importancia de los métodos numéricos en el análisis hidrológico moderno. Además, se realiza una comparativa entre los volúmenes estimados mediante estos métodos de integración y los obtenidos a través de un programa de la Comisión que emplea una integración a través de rectángulos. Este contraste demuestra no solo la precisión de los métodos de Newton, sino también su utilidad práctica en escenarios de ingeniería real, proporcionando una base sólida para la toma de decisiones en proyectos de gran envergadura. \cite{newton_method}
+
+    \subsection{OpenGeoSys}
+    El proyecto OpenGeoSys (OGS) se presenta como una iniciativa científica de código abierto para la simulación numérica de procesos termo-hidro-mecánico-químicos (THMC) en medios porosos. Empleando principalmente el Método de Elementos Finitos (FEM), OGS proporciona un marco numérico flexible para abordar problemas multifacéticos en medios porosos y fracturados, con aplicaciones extendidas en geociencia e hidrología. El desarrollo de OGS, que comenzó en los años ochenta, se basa en un enfoque de FEM orientado a objetos, complementado con un amplio conjunto de interfaces para el pre y postprocesamiento de datos.
+
+    El modelado de procesos acoplados en OGS ha sido relevante en diversas áreas de la ingeniería y aplicaciones geocientíficas desde la década de 1970, abordando problemas como la consolidación del suelo, construcción de presas y exploración de campos de petróleo y gas. Los avances en estudios experimentales y teóricos sobre los efectos acoplados de temperatura, hidráulica, mecánica y química en medios porosos fracturados se han acelerado en las últimas dos décadas, impulsados por la necesidad de evaluar el rendimiento y la seguridad de los depósitos de residuos nucleares de alto nivel.
+
+    Para la evaluación del rendimiento y la seguridad a largo plazo de un repositorio de residuos nucleares en una formación geológica profunda, es crucial garantizar el aislamiento de un repositorio subterráneo. Se necesita predecir numéricamente los procesos de transporte de solutos bajo condiciones acopladas que involucran estabilidad mecánica, carga térmica de los residuos de alto nivel y química en las aguas subterráneas. Con el rápido desarrollo de la tecnología informática, es posible analizar problemas geocientíficos complicados de manera acoplada utilizando códigos numéricos modernos. Sin embargo, entender estos procesos acoplados basados en datos experimentales disponibles e implementar los algoritmos desarrollados en los códigos numéricos sigue siendo un gran desafío para los científicos, requiriendo cooperación interdisciplinaria e interactiva.\cite{geosys}
+
+    El sitio oficial del proyecto es \href{https://www.opengeosys.org/#:~:text=OpenGeoSys%20,the%20fields%20of%20regionals}{página web} y el código de este puede encontrarse en el siguiente \href{https://gitlab.opengeosys.org/ogs/ogs}{repositorio}.
+    
+    \subsection{Algoritmos en el Desarrollo de Motores de Juegos}
+    En una etapa más avanzada de los métodos numéricos se encuentra el desarrollo de motores para videojuegos, incluyendo el Método de Euler, el Método de Verlet y el Método de Runge-Kutta para la integración numérica. La detección de colisiones y cómo se equilibra la simplicidad y precisión en este proceso, incluyendo el uso de volúmenes de límites geométricos y el algoritmo GJK son temas ampliamente estudiados, así como el cálculo de los puntos de contacto utilizando el Algoritmo de Sutherland-Hodgman para determinar la respuesta a colisiones.\cite{serranoalgos}
+    
+    Un ejemplo de la importancia de los métodos de integración numérica y aprendizaje profundo en el desarrollo de videojuegos es el estudio realizado en el juego \textit{DOOM}. En el artículo "Playing Doom with SLAM-Augmented Deep Reinforcement Learning", se explora un enfoque innovador para el aprendizaje de políticas en juegos 3D, utilizando un modelo de agente que incorpora conceptos semánticos y abstracciones. Este modelo se apoya en la Red de Aprendizaje Profundo Q (DQN) y mejora el procesamiento de entornos 3D complejos al añadir detalles sobre objetos y elementos estructurales, así como la localización del agente. 
+
+    El estudio demuestra cómo la introducción de mapas semánticos en el modelo DQN estándar, que proporcionan información agregada sobre el entorno 3D alrededor del agente, mejora la eficacia del aprendizaje en \textit{DOOM}. Estos mapas permiten al agente mantener información sobre áreas observadas anteriormente y construir un modelo agregado del entorno 3D, lo cual es crucial en el escenario de deathmatch de \textit{DOOM}, donde el objetivo es eliminar tantos oponentes como sea posible. La investigación subraya los beneficios de las representaciones semánticas en el aprendizaje de políticas, ofreciendo perspectivas para mejorar el rendimiento y la escala de los algoritmos de aprendizaje en entornos 3D más allá de "DOOM".\cite{doommethods}
      
     \section{Conclusiones}
     \label{sec:Conclusiones}
@@ -335,7 +367,7 @@
     Este proyecto no solo ha proporcionado una comparación detallada de la eficiencia y precisión de estos métodos, sino que también ha brindado una plataforma para familiarizarse con su implementación en Python, un lenguaje de programación ampliamente utilizado en la ciencia de datos, la investigación y el desarrollo de software. La habilidad para implementar y comparar estos métodos es esencial para los ingenieros y científicos, permitiéndoles elegir la herramienta adecuada para sus necesidades específicas.
     
     En conclusión, los métodos de integración numérica son herramientas poderosas y flexibles en el análisis numérico. Su comprensión y correcta aplicación son cruciales para resolver problemas complejos en el mundo moderno, y este proyecto ha planteado una introducción a su entendimiento, proporcionando familiaridad y un entorno para su aplicación en diferentes escenarios.    
-    
+
     \printbibliography
 
 \end{document}

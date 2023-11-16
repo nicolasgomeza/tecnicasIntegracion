@@ -19,6 +19,120 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{newton_method}{article}{}
+      \name{author}{6}{}{%
+        {{hash=c623ffc161d069fb48a4c9eef2448885}{%
+           family={Arganis-Juárez},
+           familyi={A\bibinithyphendelim J\bibinitperiod},
+           given={Maritza\bibnamedelima Liliana},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=689564cbaf8120e08bb7e1ad56b37636}{%
+           family={Cortés-Rosas},
+           familyi={C\bibinithyphendelim R\bibinitperiod},
+           given={Jesús\bibnamedelima Javier},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=6884d1b9d6f1780212d7392582d4eb68}{%
+           family={González-Cárdenas},
+           familyi={G\bibinithyphendelim C\bibinitperiod},
+           given={Miguel\bibnamedelima Eduardo},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=7a9f507bd037909081c8f54f679777ff}{%
+           family={Pinilla-Morán},
+           familyi={P\bibinithyphendelim M\bibinitperiod},
+           given={Víctor\bibnamedelima Damián},
+           giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=efa6f070a6a3a3a2205ced048dc0f7f7}{%
+           family={Salazar-Moreno},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={Alfonso},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b63b7e0ee9c556bb675bad86ac4f4c05}{%
+           family={García-Burgos},
+           familyi={G\bibinithyphendelim B\bibinitperiod},
+           given={Salvador},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {FI-UNAM}%
+      }
+      \strng{namehash}{c14dbd7a5f159e1512f8ce162313391f}
+      \strng{fullhash}{1e201507d157b8d402dce241cb71e268}
+      \strng{bibnamehash}{c14dbd7a5f159e1512f8ce162313391f}
+      \strng{authorbibnamehash}{c14dbd7a5f159e1512f8ce162313391f}
+      \strng{authornamehash}{c14dbd7a5f159e1512f8ce162313391f}
+      \strng{authorfullhash}{1e201507d157b8d402dce241cb71e268}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2594-0732}
+      \field{journaltitle}{Volumen XIX (número 2), abril-junio 2018}
+      \field{note}{Artículo arbitrado}
+      \field{title}{Newton's numerical integration schemes applied in a reservoir operation problem}
+      \field{year}{2018}
+      \field{pages}{183\bibrangedash 193}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.22201/fi.25940732e.2018.19n2.016
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.22201/fi.25940732e.2018.19n2.016
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.22201/fi.25940732e.2018.19n2.016
+      \endverb
+    \endentry
+    \entry{doommethods}{misc}{}
+      \name{author}{6}{}{%
+        {{hash=e6c167d21a493e485063cf6eddc1aadc}{%
+           family={Bhatti},
+           familyi={B\bibinitperiod},
+           given={Shehroze},
+           giveni={S\bibinitperiod}}}%
+        {{hash=954cf7680b6ce14813973eccdca3c4bc}{%
+           family={Desmaison},
+           familyi={D\bibinitperiod},
+           given={Alban},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4674ee263e4e10367c19c433e4fea655}{%
+           family={Miksik},
+           familyi={M\bibinitperiod},
+           given={Ondrej},
+           giveni={O\bibinitperiod}}}%
+        {{hash=a07891d2d6d3da5f1827c01269cc6da6}{%
+           family={Nardelli},
+           familyi={N\bibinitperiod},
+           given={Nantas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=867ea4114414dc44f1ce16f8e90143f9}{%
+           family={Siddharth},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3269ee96fb4b61a52f4c01b02fc0751c}{%
+           family={Torr},
+           familyi={T\bibinitperiod},
+           given={Philip\bibnamedelimb H.\bibnamedelimi S.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b9710caff7b406d678c883d3e843e85}
+      \strng{fullhash}{47bd9e914e013a7aa8e2faac2fd9b2d1}
+      \strng{bibnamehash}{9b9710caff7b406d678c883d3e843e85}
+      \strng{authorbibnamehash}{9b9710caff7b406d678c883d3e843e85}
+      \strng{authornamehash}{9b9710caff7b406d678c883d3e843e85}
+      \strng{authorfullhash}{47bd9e914e013a7aa8e2faac2fd9b2d1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{Playing Doom with SLAM-Augmented Deep Reinforcement Learning}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1612.00380
+      \endverb
+    \endentry
     \entry{gauss_quad}{article}{}
       \name{author}{3}{}{%
         {{hash=7f98d3d56cbd7559d26121029c90e132}{%
@@ -55,6 +169,163 @@
       \range{pages}{15}
       \verb{doi}
       \verb 10.1109/TSP.2020.3045526
+      \endverb
+    \endentry
+    \entry{geosys}{article}{}
+      \name{author}{20}{}{%
+        {{hash=0381b8bb8067bc5961b6b219a1b1508b}{%
+           family={Kolditz},
+           familyi={K\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+        {{hash=3c80e830bb2aaa61c1b8eee6f6938371}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=46566f567799d9b3ff774c382482cad6}{%
+           family={Bilke},
+           familyi={B\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+        {{hash=581f5c879a04259aec65a8a63d8cfee2}{%
+           family={Grunwald},
+           familyi={G\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d5a5a08f1e0d826656817edd95fb5149}{%
+           family={Delfs},
+           familyi={D\bibinitperiod},
+           given={Jens-Olaf},
+           giveni={J\bibinithyphendelim O\bibinitperiod}}}%
+        {{hash=443cb03b95f80fbbd679533832ab9ce2}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=79227b1a5df983abf36ea6c0b69fae28}{%
+           family={Görke},
+           familyi={G\bibinitperiod},
+           given={U},
+           giveni={U\bibinitperiod}}}%
+        {{hash=5e1a86096da4f9160f923cfae61eab25}{%
+           family={Kalbacher},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c7143827d2c7b0cf4fc63aba2dd105d2}{%
+           family={Kosakowski},
+           familyi={K\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=338bf9b6cf8a6e665c4861ce3d7d7536}{%
+           family={Mcdermott},
+           familyi={M\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ae304f6f5b1a4299d3118de86ce82cfd}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Chan-Hee},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=e61161f10d5b4fa7254a9567efcc47bc}{%
+           family={Radu},
+           familyi={R\bibinitperiod},
+           given={Florin},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7b236449ade0b9eb79d51c34fd4313c9}{%
+           family={Rink},
+           familyi={R\bibinitperiod},
+           given={Karsten},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5fd5b85bd48d15e79e3bfa9492334192}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Haibing},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ee2cbfe6a9485669b25736ce243e95fc}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=00884afaf823d252bb70ba259d4e8103}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Yuanyuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d085d2261bd141f46c7f636043f9e407}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Ashok},
+           giveni={A\bibinitperiod}}}%
+        {{hash=707530d3ddaba5da8241e3337924d7cf}{%
+           family={Taron},
+           familyi={T\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=62dd779c8daf82aed6c32bc3c1cf1647}{%
+           family={Walther},
+           familyi={W\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3bc68efdb3fac8e30822a191473deb33}{%
+           family={Zehner},
+           familyi={Z\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ca4753e0b54be1f3645933376d23c2c}
+      \strng{fullhash}{9286b81c2541fcad21f409398b077361}
+      \strng{bibnamehash}{4ca4753e0b54be1f3645933376d23c2c}
+      \strng{authorbibnamehash}{4ca4753e0b54be1f3645933376d23c2c}
+      \strng{authornamehash}{4ca4753e0b54be1f3645933376d23c2c}
+      \strng{authorfullhash}{9286b81c2541fcad21f409398b077361}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Earth Sciences}
+      \field{month}{09}
+      \field{title}{OpenGeoSys: An open-source initiative for numerical simulation of thermo-hydro-mechanical/chemical (THM/C) processes in porous media}
+      \field{volume}{67}
+      \field{year}{2012}
+      \field{pages}{589\bibrangedash 599}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s12665-012-1546-x
+      \endverb
+    \endentry
+    \entry{serranoalgos}{online}{}
+      \name{author}{1}{}{%
+        {{hash=02ee48bf255fa4df82cd330f3b4a5aed}{%
+           family={Serrano},
+           familyi={S\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{02ee48bf255fa4df82cd330f3b4a5aed}
+      \strng{fullhash}{02ee48bf255fa4df82cd330f3b4a5aed}
+      \strng{bibnamehash}{02ee48bf255fa4df82cd330f3b4a5aed}
+      \strng{authorbibnamehash}{02ee48bf255fa4df82cd330f3b4a5aed}
+      \strng{authornamehash}{02ee48bf255fa4df82cd330f3b4a5aed}
+      \strng{authorfullhash}{02ee48bf255fa4df82cd330f3b4a5aed}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Harold Serrano's Blog}
+      \field{note}{For a game character to experience physics, a game engine needs to compute the equations of motion, collision, contact points, etc. There is a set of basic algorithms that aids a character experience such effects. For example, the Runge-Kutta Method computes the Equations of Motion using numerical integration methods. The Gilbert-Johnson-Keerthi (GJK) algorithm detects collision using the Minkowski Difference. The Sutherland-Hodgman algorithm identifies collision contact points by clipping a polygon.}
+      \field{title}{Algorithms in Game Engine Development}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.haroldserrano.com/blog/algorithms-in-game-engine-development
+      \endverb
+      \verb{url}
+      \verb https://www.haroldserrano.com/blog/algorithms-in-game-engine-development
       \endverb
     \endentry
     \entry{smythnumerical}{inbook}{}
